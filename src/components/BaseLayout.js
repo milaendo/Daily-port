@@ -7,13 +7,13 @@ class BaseLayout extends Component{
             <div>
                 <div className="nav">
                     <ul>
-                    <NavLink to="/"><button>Home</button></NavLink>
-                    <NavLink to="/About"><button>About</button></NavLink>
-                    <NavLink to="/Portfolio"><button>Portfolio</button></NavLink>
-                    <NavLink to='/Contacts'><button>Contact</button></NavLink>
-                    <NavLink to='/References'><button>References</button></NavLink>
-                    <NavLink to='ThisPage'><button>This Page</button></NavLink>
-                    <NavLink to='ThatPage'><button>That Page</button></NavLink>
+                    <NavLink exact activeClassName='active' to="/"><button>Home</button></NavLink>
+                    <NavLink activeClassName='active'to="/About"><button>About</button></NavLink>
+                    <NavLink activeClassName='active'to="/Portfolio"><button>Portfolio</button></NavLink>
+                    <NavLink activeClassName='active'to='/Contacts'><button>Contact</button></NavLink>
+                    <NavLink activeClassName='active'to='/References'><button>References</button></NavLink>
+                    <NavLink activeClassName='active'to='/ThisPage'><button>This Page</button></NavLink>
+                    <NavLink activeClassName='active'to='/ThatPage'><button>That Page</button></NavLink>
                     </ul>
                 </div>
             {this.props.children}
