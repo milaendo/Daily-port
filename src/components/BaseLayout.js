@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
 
 class BaseLayout extends Component{
     render(){
@@ -7,9 +7,13 @@ class BaseLayout extends Component{
             <div>
                 <div className="nav">
                     <ul>
-                    <Link to="/"><button>Home</button></Link>
-                    <Link to="/About"><button>About</button></Link>
-                    <Link to="/Portfolio"><button>Portfolio</button></Link>
+                    <NavLink to="/"><button>Home</button></NavLink>
+                    <NavLink to="/About"><button>About</button></NavLink>
+                    <NavLink to="/Portfolio"><button>Portfolio</button></NavLink>
+                    <NavLink to='/Contacts'><button>Contact</button></NavLink>
+                    <NavLink to='/References'><button>References</button></NavLink>
+                    <NavLink to='ThisPage'><button>This Page</button></NavLink>
+                    <NavLink to='ThatPage'><button>That Page</button></NavLink>
                     </ul>
                 </div>
             {this.props.children}
